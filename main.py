@@ -62,6 +62,8 @@ class MyTaskBarIcon(wx.adv.TaskBarIcon):
 
 app = wx.App(False)
 
+crutch = wx.Frame(None, -1, "")
+
 #TODO change dir to this script dir
 
 sys_tray =  MyTaskBarIcon()
@@ -80,7 +82,6 @@ try:
 except FileNotFoundError:
 	None
 except Exception as e:
-	print("Всё слетело к чертям")
 	print(str(e))
 	dialog = wx.MessageDialog(None, "Неудалось запустить программу. Код ошибки: " + str(e), caption="Error", style=wx.OK|wx.CENTRE|wx.ICON_ERROR, pos=wx.DefaultPosition)
 	dialog.ShowModal()
