@@ -47,6 +47,22 @@
     H: Р
     I: Ш
     J: О
+    K: Л
+    L: Д
+    M: Ь
+    N: Т
+    O: Щ
+    P: З
+    Q: Й
+    R: К
+    S: Ы
+    T: Е
+    U: Г
+    V: М
+    W: Ц
+    X: Ч
+    Y: Н
+    Z: Я
 - title: UTF-8 RU -> EN
   codepage: utf-8
   dictionary:
@@ -124,5 +140,3 @@
     ;: "$"
     ":": "^" 
     ?: "&"
-    
-    
