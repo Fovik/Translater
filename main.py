@@ -12,7 +12,7 @@ __version__ = '0.0.1'
 
 
 def ShowAbout(event):
-	dialog = wx.MessageDialog(None, "Создал Korobka", caption="О программе", style=wx.OK|wx.CENTRE, pos=wx.DefaultPosition)
+	dialog = wx.MessageDialog(None, "Создал Pavlov Artemiy", caption="О программе", style=wx.OK|wx.CENTRE, pos=wx.DefaultPosition)
 	dialog.ShowModal()
 	
 
@@ -55,7 +55,8 @@ class MyTaskBarIcon(wx.adv.TaskBarIcon):
 		menu.Append(wx.ID_SEPARATOR, '', "")
 		menu.Append(ID_MENU_ABOUT, 'О программе', "")
 		menu.Append(wx.ID_EXIT, 'Выход', "")
-		self.Bind(wx.EVT_MENU, onExit, id=wx.ID_EXIT)		
+		self.Bind(wx.EVT_MENU, onExit, id=wx.ID_EXIT)
+		self.Bind(wx.EVT_MENU, ShowAbout, id=ID_MENU_ABOUT)		
 		
 		return menu
 
